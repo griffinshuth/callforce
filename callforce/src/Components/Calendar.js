@@ -33,18 +33,6 @@ class Schedule extends Component {
           })
         }
       }
-      handleClickDown = (e) => {
-        if (e.target.classList.contains("available")) {
-        } else {
-          if (e.target.classList[2] === "timeBlock") {
-            this.setState({
-              down: true,
-              selectedRole: e.target.classList[0],
-              selectedTimes: [...this.state.selectedTimes, Number(e.target.classList[1].substring(3))]
-            })
-          }
-        }
-      }
     
       handleMouseOver = (e) => {
         if (this.state.down && e.target.classList[0] === this.state.selectedRole) {
@@ -117,9 +105,12 @@ class Schedule extends Component {
     
       render() {
         return (
-          <div className="App">
-                      <div className="addButton"><button onClick={this.toggleModal}>Add Availability</button></div>
+          <div className="calender">
+          <div className="callforce">
+          <img src={require('../images/logo-large.png')} alt='CallForce Logo' width='300' />
+                      <div className="addButton"><button onClick={this.toggleModal}> +   Add Availability</button></div>
             <Modal date={this.state.date.toISOString().substring(0, 10)} onClose={this.toggleModal} open={this.state.open} addAvailability={this.addAvailability} />
+          </div>
             <header>
               <div>
                 <h2>Schedule</h2>

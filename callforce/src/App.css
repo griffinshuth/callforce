@@ -1,3 +1,4 @@
+
 header {
   display: flex;
   flex-flow: row;
@@ -9,8 +10,8 @@ header {
 header h2 {
   line-height: 0;
   text-align: center;
-  font-size: 4vh;
-  margin-bottom: 4vh;
+  font-size: 8vh;
+  margin-bottom: 7vh;
   margin-top: 2vh;
   
 }
@@ -20,18 +21,20 @@ header h3 {
   text-align: center;
   font-size: 2.5vh;
 }
+
+
 .days {
   display: flex;
-  flex-flow: row;
   justify-content: flex-end;
-  height: 10px;
+  height: 40px;
   align-items: flex-end;
   width:  100px;
   margin-bottom:50;
 }
 
 .days p {
-  margin-bottom:5px
+  margin-bottom:5px;
+  font-size:2vh
 }
 
 .scheduleGrid {
@@ -124,16 +127,17 @@ header h3 {
   }
 
   .addButton {
-    grid-row: 18;
-    grid-column-start: 1;
-    grid-column-end: 5;
+    display:flex;
     background: white;
     padding-top: 4px;
     padding-bottom: 3px;
+    justify-content: flex-start;
   }
 
   .addButton button {
-    width: 30%
+    width: 25%;
+    display:flex;
+    justify-content: center;
   }
 
   .columnHeader {
@@ -148,32 +152,37 @@ header h3 {
   }
 
   button {
-    border: 2px solid #ef3e36;
-    padding: 7px 12px !important;
+    border: 2px solid black;
+    padding: 7px  !important;
     border-radius: 25px;
-    color: #ef3e36 !important;
+    color: black !important;
     background-color: white;
     font-size:2vh;
     font-weight:bold;
+    
   }
 
   input[type=submit] {
-    border: 2px solid #ef3e36;
+    border: 2px solid black;
     padding: 7px 15px !important;
     border-radius: 25px;
-    color: #ef3e36 !important;
+    color: black !important;
     background-color: white;
     width: 100%;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    
   }
 
   button:hover {
     color: white !important;
-    background-color: #ef3e36;
+    background-color: blue;
     text-decoration: none;
   }
   input[type=submit]:hover {
     color: white !important;
-    background-color: #ef3e36;
+    background-color: blue;
     text-decoration: none;
   }
   button:focus {
@@ -269,17 +278,17 @@ header h3 {
     user-select: none;
   }
   .Hygienist.available {
-    background: #F7B538;
+    background: #38f771;
     position: relative;
     user-select: none;
   }
   .title {
     line-height: 1;
-    color: white;
+    color: black;
     padding-left: 8px;
     padding-top: 8px;
     margin: 0px;
-    font-size: 1.7vh;
+    font-size: 1.6vh;
     font-weight: 600;
     margin: 6px;
   }
